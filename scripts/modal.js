@@ -49,7 +49,7 @@ $(document).ready(function() {
       tag: 'It all begins here.',
       detail:
         'Throughout my entire engineering career, I never really had a chance to look at web development from a graphical design or technical perspective. This is my first take on web development. Made using HTML and Javascript with open source web templates. But Im not an artist.',
-      link: 'https://github.com/richardle17/data-structures-algorithms-practice'
+      link: 'https://richardle17.github.io/'
     },
     awscamera: {
       title: 'AWS IoT Security Camera',

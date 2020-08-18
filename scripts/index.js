@@ -187,7 +187,7 @@ $(function() {
     e.preventDefault();
 
     $.ajax({
-      url: 'https://formspree.io/richardle17business@gmail.com',
+      url: 'richardle17business@gmail.com',
       method: 'POST',
       data: { message: $('form').serialize() },
       dataType: 'json'
