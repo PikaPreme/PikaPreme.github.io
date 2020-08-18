@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+
+    <!-- HOSTED -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="fonts/mdi/css/materialdesignicons.min.css"
+      media="all"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- HOSTED -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+    <!-- LOCAL -->
+    <script src="scripts/index.js"></script>
+    <script src="scripts/modal.js"></script>
+  </head>
+
+  <style>
+
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+  background-image: url('img/northernlights.jpg');
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center;
+  background-size: cover;
+  }
+  </style>
+
+
+
+  <body>
+    <div class="overflow-wrap">
+      <!-- HOME -->
+      <div class="modal-wrap flex">
+        <div class="mask"></div>
+        <div class="modal" id="modal">
+          <div class="carousel-wrap">
+            <div class="window">
+              <div id="carousel">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+              </div>
+              <i class="mdi mdi-chevron-left" id="prev"></i>
+              <i class="mdi mdi-chevron-right" id="next"></i>
+            </div>
+          </div>
+          <div class="info-box">
+            <div class="title"></div>
+            <div class="tag"></div>
+            <div class="detail"></div>
+            <a href="#" target="_blank"
+              ><div class="button">
+                <i class="mdi mdi-open-in-new"></i>VIEW SITE
+              </div></a
+            >
+          </div>
+          <i class="close mdi mdi-close"></i>
+        </div>
+      </div>
+
+      <section id="home" class="bgimg-1 flex">
+        <div id="pt" class="bgimg-1"></div>
+        <div class="flex">
+
+          <div class="text w3-center ">
+            Hello, I'm Supreme.
+            <br />
+            I'm a new graduate Python Developer.
+          </div>
+
+          <div class="button page-link w3-center w3-padding-xlarge w3-black w3-large w3-animate-opacity" dest="about">
+            View my work <i class="mdi mdi-arrow-right"></i>
+          </div>
+
+          <nav class="flex">
+            <div class="link-wrap">
+              <div class="active page-link" dest="home">home</div>
+              <div class="page-link" dest="about">about</div>
+              <div class="page-link" dest="work">work experience</div>
+              <div class="page-link" dest="portfolio">projects</div>
+              <div class="page-link" dest="blog">resume</div>
+              <div class="page-link" dest="contact">contact</div>
+            </div>
+            <i class="mdi mdi-menu"></i>
+          </nav>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container flex">
+<!--          <div class="header waypoint" data-animation="slide-in-left">-->
+<!--            ABOUT-->
+<!--          </div>-->
+<!--          <div-->
+<!--            class="header-bar waypoint"-->
+<!--            data-animation="slide-in-left"-->
+<!--            data-delay=".5s"-->
+<!--          ></div>-->
+
+          <div class="skills-wrapper flex row-gt-sm">
+            <div
+              class="flex flex-50-gt-sm waypoint"
+              data-animation="slide-in-left"
+            >
+              <img src="img/supbogoCircle.png" class="me" />
+<!--               <div><img class="up-arrow" src="img/up-arrow.png"></div>-->
+              <div class="label bold">Who am I?</div>
+              <div>
+                <p>
+                  I'm a software engineer with a strong interest in Python, Automation, Big Data, and Cloud Services. <br />Interested in all things Software Engineering.
+                  <br /><br />
+                  I'm a newly grad student from SJSU with a BS in Computer Engineering, looking to further my education in the masters program.
+                  <br /><br />
+                  Previously interned at Symantec in Mountain View, working on AWS Automation infrastructure for data analytics for Symantec VIP's service alerters. I was a core member on the intern team, and heavily contributed to the backend framework of the project.
+
+                </p>
+
+                <span class="page-link highlight" dest="contact"
+                >I'm currently open for internship or full time opportunities, feel free to reach out!</span
+                >
+
+              </div>
+            </div>
+          </div>
+
+
+            <!-- Work Experience Section -->
+            <div class="container flex" id="work">
+              <div class="header waypoint" data-animation="slide-in-left">
+                <br /><br /><br /><br />
+                WORK EXPERIENCE
+              </div>
+              <div
+                      class="header-bar waypoint"
+                      data-animation="slide-in-left"
+                      data-delay="0.7s"
+              ></div>
+
+              <div class="flex row-gt-sm">
+                <div
+                        class="flex flex-50-gt-sm waypoint"
+                        data-animation="slide-in-left"
+                >
+<!--                  <img src="img/symantec.jpg" class="me" />-->
+                  <!--               <div><img class="up-arrow" src="img/up-arrow.png"></div>-->
+                  <div class="label bold">Symantec - California - May 2019 - Nov 2019</div>
+                  <div>
+                    <p>
+                      Worked with 2 interns and project manager to build a project to automate and support on-call
+                      engineers by using several AWS services (CloudWatch, Lambda, S3, SES, SQS).
+                      <br /><br />
+                      Designed core infrastructure for new scripts to be added for extensibility and flexibility.
+                      <br /><br />
+                      Created YAML configurations to allow for continuous integration and delivery.
+                      <br /><br />
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <!-- bars for skills -->
+            <div
+                    class="flex flex-50-gt-sm waypoint bars-wrap"
+                    data-animation="slide-in-right"
+                    data-delay="0.5s"
+            >
+              <div class="bar flex">
+                <div class="bar fill" style="width:90%">
+                  <div class="tag bold flex">Python</div>
+                </div>
+                <span>90%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:90%">
+                  <div class="tag bold flex">Automation</div>
+                </div>
+                <span>90%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:80%">
+                  <div class="tag bold flex">Scripting</div>
+                </div>
+                <span>80%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:75%">
+                  <div class="tag bold flex">Big Data</div>
+                </div>
+                <span>75%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:70%">
+                  <div class="tag bold flex">AWS</div>
+                </div>
+                <span>70%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:60%">
+                  <div class="tag bold flex">C/C++</div>
+                </div>
+                <span>60%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:60%">
+                  <div class="tag bold flex">Java</div>
+                </div>
+                <span>60%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:75%">
+                  <div class="tag bold flex">AHK</div>
+                </div>
+                <span>75%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:70%">
+                  <div class="tag bold flex">HTML</div>
+                </div>
+                <span>70%</span>
+              </div>
+
+            </div>
+
+            <div
+              class="flex flex-50-gt-sm waypoint bars-wrap"
+              data-animation="slide-in-right"
+            >
+            </div>
+          </div>
+      </section>
+
+
+      <!-- PORTFOLIO -->
+      <section class="flex" id="portfolio">
+        <div class="header waypoint" data-animation="slide-in-right">
+          PROJECTS
+        </div>
+        <div
+          class="header-bar waypoint"
+          data-animation="slide-in-right"
+          data-delay=".3s"
+        ></div>
+
+        <div class="filter-wrap waypoint" data-animation="fade-in">
+          <div class="flex row">
+            <div class="filter" data-filter="all">ALL</div>
+            <div class="filter" data-filter=".python">Python</div>
+            <div class="filter" data-filter=".automation">Automation</div>
+            <div class="filter" data-filter=".datavisualization">Data Visualization</div>
+            <!--            <div class="filter" data-filter=".js">Other</div>-->
+          </div>
+          <div class="float-bar">
+            <div class="flex row">
+              <div class="filter" data-filter="all">ALL</div>
+              <div class="filter" data-filter=".python">Python</div>
+              <div class="filter" data-filter=".automation">Automation</div>
+              <div class="filter" data-filter=".datavisualization">Data Visualization</div>
+              <!--              <div class="filter" data-filter=".js">Other</div>-->
+            </div>
+          </div>
+        </div>
+
+        <div id="gallery" class="container flex row wrap waypoint">
+          <div class="mix python automation" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">TCGPlayerScraper - Web Scraper</div>
+                <span class="highlight">Python / Automation</span>
+              </div>
+              <div class="button" id="tcgplayerscraper">LEARN MORE</div>
+            </div>
+          </div>
+
+          <div class="mix python automation" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">YugiohPriceChecker</div>
+                <span class="highlight">Python / Automation</span>
+              </div>
+              <div class="button" id="yugiohpricechecker">LEARN MORE</div>
+            </div>
+          </div>
+
+          <div class="mix python datavisualization" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Covid-19 Slack Bot</div>
+                <span class="highlight">Python / Slack API</span>
+              </div>
+              <div class="button" id="covid19slackbot">LEARN MORE</div>
+            </div>
+          </div>
+
+          <div class="mix python datavisualization" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Covid-19 Data Visualizer</div>
+                <span class="highlight">Python / Data Visualization</span>
+              </div>
+              <div class="button" id="covid19dashapp">LEARN MORE</div>
+            </div>
+          </div>
+
+          <div class="mix python datavisualization" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Covid-19 Interactive Global Map Tracker</div>
+                <span class="highlight">Python / Data Visualization</span>
+              </div>
+              <div class="button" id="covid19map">LEARN MORE</div>
+            </div>
+          </div>
+
+          <div class="mix python" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Data Structure & Algorithms</div>
+                <span class="highlight">Python</span>
+              </div>
+              <div class="button" id="dsa">LEARN MORE</div>
+            </div>
+          </div>
+
+          <div class="mix html" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">My Portfolio</div>
+                <span class="highlight">HTML / JavaScript</span>
+              </div>
+              <div class="button" id="website">Supreme</div>
+            </div>
+          </div>
+
+          <div class="mix python automation" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">AWS Security Camera</div>
+                <span class="highlight">Python / AWS / Raspberry Pi</span>
+              </div>
+              <div class="button" id="awscamera">LEARN MORE</div>
+            </div>
+          </div>
+
+          <div class="mix automation" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Supreme Checkout Bot</div>
+                <span class="highlight">AHK / Automation</span>
+              </div>
+              <div class="button" id="supremebot">LEARN MORE</div>
+            </div>
+          </div>
+
+          <div class="mix python automation" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">OSRS Price Getter</div>
+                <span class="highlight">Python / Automation</span>
+              </div>
+              <div class="button" id="osrspricegetter">LEARN MORE</div>
+            </div>
+          </div>
+
+          <div class="mix java" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Kirby Platformer</div>
+                <span class="highlight">Java</span>
+              </div>
+              <div class="button" id="kirby">LEARN MORE</div>
+            </div>
+          </div>
+
+        <!--   end of projects       -->
+        </div>
+      </section>
+
+
+<!--       Resume -->
+      <section id="blog">
+        <div class=" flex">
+          <div class="header waypoint" data-animation="slide-in-left">RESUME</div>
+          <div
+            class="header-bar waypoint"
+            data-animation="slide-in-left"
+            data-delay=".5s"
+          ></div>
+
+          <div class="flex row wrap">
+            <div class="flex row-gt-sm">
+              <a
+                href="http://www.myresume420.com"
+                target="_blank"
+              >
+                <div class="blog-wrap waypoint" data-animation="fade-in">
+                  <div class="fade-wrap">
+                    <div class="thumb" id="thumb-1"></div>
+                    <div class="label bold">Supreme Resume</div>
+                    <div class="date">Updated JULY 4, 2020</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <svg
+          preserveAspectRatio="none"
+          viewBox="0 0 100 102"
+          height="75"
+          width="100%"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svgcolor-light"
+        >
+          <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+        </svg>
+        <div class="container flex">
+          <div class="header waypoint" data-animation="slide-in-left">
+            CONTACT
+          </div>
+          <div
+            class="header-bar waypoint"
+            data-animation="slide-in-right"
+            data-delay=".25s"
+          ></div>
+          <div
+            class="highlight waypoint"
+            data-animation="slide-in-right"
+            data-delay=".5s"
+          >
+            Email me or message me on LinkedIn
+            <br />
+            Email: testemail12345@gmail.com
+          </div>
+          <form
+            class="waypoint"
+            data-animation="pop-in"
+            data-delay=".5s"
+            id="contact-form"
+          >
+            <input placeholder="Name" type="text" name="name" required />
+            <input
+              placeholder="Enter email"
+              type="email"
+              name="email"
+              required
+            />
+            <textarea
+              placeholder="Your Message"
+              type="text"
+              name="message"
+            ></textarea>
+            <div id="success">
+              <div>
+                Your message was sent successfully. Thanks!<span
+                  id="close"
+                  class="mdi mdi-close"
+                ></span>
+              </div>
+            </div>
+            <input class="button" type="submit" id="submit" value="SUBMIT" />
+          </form>
+        </div>
+      </section>
+
+
+
+      <footer>
+        <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+        <div class="icon-wrap flex row">
+          <a href="">
+            <div class="flex icon" id="icon-2">
+              <i class="mdi mdi-linkedin"></i>
+            </div>
+          </a>
+          <a href="youtube.com">
+            <div class="flex icon" id="icon-3">
+              <i class="mdi mdi-facebook"></i>
+            </div>
+          </a>
+          <a href="">
+            <div class="flex icon" id="icon-4">
+              <i class="mdi mdi-instagram"></i>
+            </div>
+          </a>
+          <a href="reddit.com">
+            <div class="flex icon" id="icon-5">
+              <i class="mdi mdi-codepen"></i>
+            </div>
+          </a>
+        </div>
+        <div class="info-box">
+          <div class="footnote">
+            Supreme <span class="highlight">2020</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="preload">
+      <img src="img/me.png" />
+      <img src="img/city.jpg" />
+      <img src="img/thumb-1-tcgplayerscraper.png" />
+      <img src="img/thumb-2-yugiohpricesapi.jpg" />
+      <img src="img/thumb-3-covid19slackbot.jpg" />
+      <img src="img/thumb-4-covid19stats.jpg" />
+      <img src="img/thumb-5-covid19map.jpg" />
+      <img src="img/thumb-6-portfolio.jpg" />
+    </div>
+  </body>
+</html>
