@@ -71,19 +71,26 @@ $(document).ready(function() {
         'A tool to instantly price up item sets based on user configs. Built with Python and OSRS WikiApi. Features the ability to import any set of items configured.',
       link: 'https://github.com/richardle17/data-structures-algorithms-practice'
         },
-    kirby: {
-      title: 'Kirby Platformer',
-      tag: 'Have what it takes to win?',
-      detail:
-        'A simple yet challenging platformer video game based on the popular series: Kirby. Developed entirely in Java.',
-      link: 'https://github.com/richardle17/Kirby-Platformer'
-        },
+//    kirby: {
+//      title: 'Kirby Platformer',
+//      tag: 'Have what it takes to win?',
+//      detail:
+//        'A simple yet challenging platformer video game based on the popular series: Kirby. Developed entirely in Java.',
+//      link: 'https://github.com/richardle17/Kirby-Platformer'
+//        },
     cryptobot: {
       title: 'Cryptocurrency Tracker Bot',
       tag: 'Currency of the Future.',
       detail:
         'A bot scripted to retrieve pricing data on cryptocurrencies. Never miss the chance to ride the cryptocurrency hype. Developed with python and integrated with Slack API..',
       link: 'https://github.com/richardle17/cryptobot'
+        },
+    aqislackbot: {
+        title: 'Air Quality Slack Bot',
+        tag: 'Accurate information and alerts at your command',
+        detail:
+        'An Air quality slack bot designed to retrieve accurate data with breezometer API. Configured to also send text message alerts using Twilio API.',
+        link: 'https://github.com/richardle17/AirQualitySlackBot'
         }
   };
 
