@@ -10,3 +10,7 @@
 # It all begins here.
 
 Throughout my entire engineering career, I never really had a chance to look at web development from a graphical design or technical perspective. This is my first take on web development. Made using HTML and Javascript with open source web templates. But Im not an artist.
+
+# TODO
+
+Update resume file
